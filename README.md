@@ -8,5 +8,5 @@ Sumit Chhabra<br>
 jerryjav@gmail.com
 <br>
 <br>
-<b>Note</b>Project is missing the classifier code but it still works with waypoint_updater, dbw_node, twistcontroller and tldetector. Car stays in the lane and checks traffic light color using /traffic_waypoint topic and applies the deceleration logic to stop the car before the stoplight. Car will accelerate again after the traffic light changes to the green color.
+<b>Note</b> Project is missing the classifier code but it still works with waypoint_updater, dbw_node, twistcontroller and tldetector. Car stays in the lane and checks traffic light color using /traffic_waypoint topic and applies the deceleration logic to stop the car before the stoplight. Car will accelerate again after the traffic light changes to the green color.
 
