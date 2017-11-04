@@ -15,7 +15,7 @@ DEBUG = False
 
 # This index search waypoints ahead and behind present
 # Also act as reference for Acceleration
-SEARCH_INDEX = 40
+SEARCH_INDEX = 20
 
 '''
 1 meter/s = 2.23694 mph
@@ -27,7 +27,7 @@ MAX_DECEL = 1.
 MIN_VEL = 1.
 
 # This buffer act as bias to stop at ditance ahead or behind stop line.
-STOP_LINE_GAP = 3
+STOP_LINE_GAP = 4
 
 class WaypointUpdater(object):
 	def __init__(self):
@@ -44,8 +44,8 @@ class WaypointUpdater(object):
 		rospy.Subscriber('/traffic_waypoint', Int32, self.traffic_cb)
 
 		# Provide linear and angular velocities
-		rospy.Subscriber('/current_velocity', TwistStamped, 
-						  self.current_velocity_cb)
+		#rospy.Subscriber('/current_velocity', TwistStamped, 
+		#				  self.current_velocity_cb)
 		
 
 	# Publishers
@@ -73,7 +73,7 @@ class WaypointUpdater(object):
 		self.current_velocity = None
 		
 		# Loop until interrupt is issued as closing simulator or Ctrl+C as examples
-		#rospy.Rate(1)
+		rospy.Rate(1)
 		rospy.spin()
 
 	'''

@@ -54,8 +54,7 @@ class Controller(object):
 
 		## If DBW is interrupted, reset throttle to avoid errors & return .. 
 		if not dbw_enabled:
-			self.throttle.reset()
-			self.steer_pid.reset()
+			self.throttle_pid.reset()
 			return 0, 0, 0
 
 		# Compute difference between target and current velocity as CTE for throttle. 
