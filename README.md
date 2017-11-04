@@ -1,4 +1,5 @@
-<h1> PEGASUS - Programming a Real Self-Driving Car (Car Capstone) Project </h1>
+<h1> Team PEGASUS<h1>
+<h2>Programming a Real Self-Driving Car (Car Capstone) Project </h2>
 <h3>Team Leader</h3>
 Anshoo Mehra<br>
 anshoomehra@gmail.com
